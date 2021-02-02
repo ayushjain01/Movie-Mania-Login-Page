@@ -1,0 +1,151 @@
+body {
+  font-family: "Seymour One", sans-serif;
+  background-color: #05afb6;
+
+  font-size: 100px;
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+#IS1 div {
+  border-radius: 10px;
+  position: relative;
+  height: 170px;
+  width: 3200px;
+  position: absolute;
+  opacity: 0.8;
+
+}
+
+#img1 {
+  background-image: url("..\\Images\\1.png");
+  position: relative;
+  background-position: center;
+  animation-name: image;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+
+}
+
+#IS2 div {
+  border-radius: 10px;
+  top: 80%;
+  height: 170px;
+  width: 3200px;
+  position: absolute;
+  opacity: 0.8;
+}
+
+
+#img2 {
+  background-image: url("..\\Images\\2.png");
+  position: relative;
+  background-position: center;
+  animation-name: image;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+
+#Title {
+  width: 100px;
+  float: left;
+  text-align: left;
+  font-size: 100px;
+  margin: auto;
+  padding: 150px 10px 150px 50px;
+  position: absolute;
+  color: #212121;
+}
+
+#logbox {
+  width: 450px;
+  height: 550px;
+  background-color: black;
+  margin: 100px 40px 100px 0px;
+  float: right;
+  text-align: center;
+  position: relative;
+  opacity: 0.8;
+  font-size: 20px;
+}
+
+#logbox a {
+  font-size: 15px;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-decoration: none;
+  margin-top: -100px;
+}
+#logbox a:hover {
+  text-decoration: underline;
+}
+.input {
+  width: 350px;
+  font-size: 20px;
+  padding: 15px 5px 15px 5px;
+  margin-top: 50px;
+  border-radius: 5px;
+}
+
+.button {
+  width: 350px;
+  font-size: 20px;
+  padding: 15px 5px 15px 5px;
+  background-color: #ffeb00;
+  outline: 0em;
+  border-radius: 5px;
+  display: inline-block;
+  border: none;
+  transition: background 250ms ease-in-out, transform 150ms ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  animation: button 5s infinite linear;
+}
+.button:hover,
+.button:focus {
+  outline: 0em;
+  background-color: #65ff00;
+  cursor: pointer;
+}
+
+.button:focus {
+  outline: 5px solid #fff;
+  outline-offset: -4px;
+}
+
+.button:active {
+  transform: scale(0.95);
+}
+#logbox hr {
+  width: 90%;
+  color: white;
+  outline: 2px white;
+  border: 1px solid white;
+}
+
+@keyframes button {
+  0% {
+    background-color: #ffeb00;
+  }
+  10%{
+    background-color: #ffeb00;
+  }
+  50% {
+    background-color: #65ff00;
+  }
+  90% {
+    background-color: #ffeb00;
+  }
+  100%{
+    background-color: #ffeb00;
+  }
+}
+
+@keyframes image{
+  0% {left:0%}
+  100%{left:-104.5%}
+}
